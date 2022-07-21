@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--作者：DSOE1024 大圣开发DSOE-->
+<!--更新时间：2022.7.20 21：45pm-->
+<!--ps：代码结构有点乱，待优化-->
+<head>
+    <!--网页标题-->
+    <title>Amazora Games</title>
+
+
+
+
+<div class="beijing">
+    <!--顶栏-->
+    <div class="top-bar">
+        
+        <h style="font-size: 34px;"><strong>|	Amazora Games 雨空工作室</strong></h>
+        <p style="font-size: large;"><br><br>|     『 蒙蒙沥雨于那悠远的青空之上洒落世间 』      |</p><p style="font-size: 34px;"><br><strong>|</strong></p>
+        
+
+    </div>
+    <!--介绍文字框-->
+
+    <div class="textbox1">
+
+        <h1 style="font-size: ;30px;">Cantos（カントス）音游</h1>
+        <p style="font-size: 17px;">Cantos是一个创新圆盘式3D音游，音游界面采用霓虹风格，背景可选择播放bga 判定盘可自由移动，
+        <br>杯子玩法是Cantos音游的特色玩法，欢迎各位在游戏中进行体验<br>目前游戏正处于测试&完善阶段，欢迎各位玩家提出宝贵建议</p>
+        <h2 style="font-size: 30px">Amazora Community 雨空社区</h2>
+        <p2 style="font-size: 17px">一个自由开放的ACG社区</p2>
+
+    </div>
+
+    
+    
+<!--侧面导航栏dock-->
+<div class="daohanglan">    
+    <style>
+
+
+
+        .textbox1{
+            background-color: rgba(140, 209, 255, 0.6);
+            width: 766px;
+            height: 520px;
+            float: right;
+            border-radius: 22.666px;
+        }
+
+        .top-bar{
+            background-color: rgba(227, 232, 229, 0.7);
+            width: 100%;
+            height: 95.618px;
+            margin: 0;
+            display: flex;
+            float: top;
+            border-radius: 17.618px;
+            
+        }
+    
+
+        .beijing{
+            background-image: url("ecymh.png");
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+      *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+
+        }
+        /*dock栏整体大小，背景色/图片*/
+        .shell{
+            width: 96.618px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color:rgb(66, 211, 255,0.422);
+            border-radius: 0 10px 10px 0px;
+            /*dock弹出过度时间*/
+            transition: .634s;
+
+        }
+        .box{
+            /*变成块级元素*/
+            display: block;
+            height: 11%;
+            width: 86%;
+            margin: 9px;
+            border-radius: 5px;
+            position: relative;
+            color: rgb(4, 1, 1);
+        }
+        
+        .shell a i{
+            font-size: 27px;
+            position: absolute;
+            margin: 14px 0 0 7px;
+            color: black;
+        }
+        
+        /*导航文字设置*/
+        .box span{
+            position: relative;
+            top: 14px;
+            left: 80px;
+            font-size: 20px;
+            /*导航收缩下文字透明不显示*/
+            opacity: 0;
+    
+        }
+        /*导航栏变宽*/
+        .shell:hover{
+            width: 270px;
+        }
+        /*当鼠标移到某一项时，背景变色*/
+        .box:hover{
+            background-color: rgba(173, 160, 238, 0.9);
+            color: rgb(255, 255, 255);
+        }
+        .box:hover .fa{
+            color: #fff;
+        }
+        /*文字显现*/
+        .shell:hover span{
+            opacity: .8;
+        }
+        .pageground{
+            background-image: url("bg.png");
+
+        }
+        
+    </style>
+<body>
+    <div class="shell">
+        <a href="main.html" class="box"><i class="homepage" aria-hidden="true"></i><span>主页</span></a>
+        <a href="#" class="box"><i class="aboutgame" aria-hidden="true"></i><span>游戏玩法</span></a>
+        <a href="downloadgames/downloadpage.html" class="box"><i class="downloadgame" aria-hidden="true"></i><span>下载游戏</span></a>
+        <a href="gotocommunity/welcome.html" class="box"><i class="amcm" aria-hidden="true"></i><span>雨空社区</span></a>
+        <a href="activity/actpage.html" class="box"><i class="hdandgg" aria-hidden="true"></i><span>活动&公告</span></a>
+        <a href="PV/aboutpv.html" class="box"><i class="pvandvidio" aria-hidden="true"></i><span>PV 动画</span></a>
+        <a href="about/aboutus.html" class="box"><i class="aboutus" aria-hidden="true"></i><span>关于我们</span></a>
+    </div>
+</body>
+</div>
+
+
+</div>
+</head>
